@@ -1,0 +1,3 @@
+imputaciones_imputaciones:
+    resource: "@ImputacionesImputacionesBundle/Resources/config/routing.yml"
+    prefix:   /

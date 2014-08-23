@@ -1,0 +1,3 @@
+imputaciones_imputaciones_homepage:
+    path:     /
+    defaults: { _controller: ImputacionesImputacionesBundle:Default:index }
