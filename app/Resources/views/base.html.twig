@@ -3,8 +3,24 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        {% block js %}<script src="{{ asset('js/jquery-2.1.1.js') }}"></script>{% endblock %}
+        {% block stylesheets %}
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+
+            <!-- Optional theme -->
+            <link rel="stylesheet" href="{{ asset('css/bootstrap-theme.min.css') }}">
+
+            <link rel="stylesheet" href="{{ asset('css/calendario.css') }}">
+
+            <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+
+        {% endblock %}
+        {% block js %}
+                <script src="{{ asset('js/jquery-2.1.1.js') }}"></script>
+                <!-- Latest compiled and minified JavaScript -->
+                <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
@@ -12,3 +28,7 @@
         {% block javascripts %}{% endblock %}
     </body>
 </html>
+
+
+
+

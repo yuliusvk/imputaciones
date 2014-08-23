@@ -2,11 +2,15 @@
 
 {% block js %}
     {{ parent() }}
+    <script src="{{ asset('bundles/imputacionesimputaciones/js/diario.js') }}"></script>
     <script src="{{ asset('bundles/imputacionesimputaciones/js/calendario.js') }}"></script>
 {% endblock %}
 
 
 {% block body %}
    Esta pagina contendra el calendario para el diario mostramos el calendario del año {{ anio }} y mes {{ mes }}
+    <input type="hidden" name="mes" id="mes" value="{{ mes }}"/>
+    <input type="hidden" name="anio" id="anio" value="{{ anio }}"/>
+    <div id="contenedorCalendario" class="marginTop20"></div>
 {% endblock %}
 
