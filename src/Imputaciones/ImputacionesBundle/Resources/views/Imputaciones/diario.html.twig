@@ -1,0 +1,12 @@
+{% extends '::base.html.twig' %}
+
+{% block js %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/imputacionesimputaciones/js/calendario.js') }}"></script>
+{% endblock %}
+
+
+{% block body %}
+   Esta pagina contendra el calendario para el diario mostramos el calendario del año {{ anio }} y mes {{ mes }}
+{% endblock %}
+

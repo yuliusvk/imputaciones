@@ -1,3 +1,8 @@
 imputaciones_imputaciones_homepage:
     path:     /
-    defaults: { _controller: ImputacionesImputacionesBundle:Default:index }
+    defaults: { _controller: ImputacionesImputacionesBundle:Imputaciones:index }
+
+
+imputaciones_imputaciones_diario:
+    path:     /diario
+    defaults: { _controller: ImputacionesImputacionesBundle:Imputaciones:diario }
